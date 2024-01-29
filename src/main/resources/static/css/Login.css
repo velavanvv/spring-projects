@@ -1,0 +1,39 @@
+body{
+    background-image: url(../img/pngegg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.login{
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 20px;
+    background:rgba(255,255,255,0.7);
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+form{
+    margin-top: 10%;
+    justify-content: center;
+    background-position: center;
+    align-items: center;
+}
+input{
+    background-color: rgb(201, 254, 234);
+    border: none;
+    display: inline;
+    padding: 14px ;
+}
+input:focus{
+    background-color: aliceblue;
+}
+button{
+    border: none;
+    padding: 5px;
+    width: 50px;
+    background-color: rgb(42, 215, 131);
+ cursor: pointer;
+    color: aliceblue;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlms:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" th:href="@{css/Register.css}"/>
+</head>
+<body>
+    <h1>Register form</h1>
+    <form action="" th:action="@{/addingCustomer}" method="post">
+    <label><b>Name</b></label><br>
+    <input type="text" name="customerName" placeholder="Enter name.." required><br>
+    <label><b>Email</b></label><br>
+    <input type="email" name="customerEmail" placeholder="Enter Email.." required><br>
+    <label><b>Number</b></label><br>
+    <input type="number" name="customerNumber" placeholder="Enter number.." required><br>
+    <label><b>Password</b></label><br>
+    <input type="password" name="customerPassword" placeholder="Enter password.." required><br>
+    <button type="submit" >Register</button>
+    </form>
+    
+</body>
+</html>

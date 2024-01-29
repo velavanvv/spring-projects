@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon"  th:href="@{img/pngegg.png}">
+    <link rel="stylesheet" type="text/css" th:href="@{css/Login.css}" />
+</head>
+
+<body>
+<form action="" th:action="@{/customerLogin}" methode="get">
+    <center>
+    <div class="login" >
+        <tr>
+            <td></td>
+            <td>
+                <div class="image">
+                    <img src="/img/image2.png" alt="image" width="50px" height="50px">
+                  
+                </div>
+            </td>
+        </tr>
+        <tr><div>
+            <td></td>
+            <th><b>Sign up</b>
+            </th>
+            </div></tr><br>
+        <tr><div class="email">
+            <td><b>Email  :<b></td>
+            <td><input type="email" name="customerEmail" placeholder="Enter email" required></td>
+        </div></tr><br>
+        <tr><div class="password">
+            <td><b>PassW:<b></td>
+            <td><input type="password" name="customerPassword" placeholder="Enter Password" required></td>
+            </div></tr><br>
+            <small style="color: red;" th:text="${error}"></small><br />
+        <tr><div class="submit">
+            <td></td>
+            <td><button type="submit">Login</button></td>
+            </div>
+        </tr><br>
+<tr><p>if you dont have account ? <a th:href="@{/register}">Register</a></p></tr>
+    </div></center>
+
+    </form>
+</body>
+
+</html>

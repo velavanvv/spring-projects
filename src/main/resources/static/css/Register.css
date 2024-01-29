@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+color: rgb(34, 206, 140);
+   background-color:rgb(162, 204, 183);
+    text-align: center;
+    margin-bottom: 1%;
+}
+input[type=email],input[type=password],input[type=text],input[type=number]{
+background-color: rgb(231, 243, 235);
+width: 30%;
+height:40px;
+margin-bottom: 2%;
+display: inline;
+border: none;
+cursor: pointer;
+}
+form{
+margin-left: 1%;
+}
+input[type=text]:focus,input[type=password]:focus,input[type=email]:focus,input[type=number]:focus{
+    background-color: #ddd;
+    outline: none;
+   
+    }
+    button{
+        border: none;
+        background-color: rgb(81, 176, 112);
+        width: 20%;
+height:30px;
+cursor: pointer;
+        
+    }
