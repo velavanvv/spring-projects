@@ -1,9 +1,13 @@
 package com.flower.shop.Entity;
 
+import java.util.List;
+
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 
 @Entity
 public class CustomerEntity {
@@ -12,6 +16,10 @@ public class CustomerEntity {
     private int customerId;
     private String customerName;
     private String customerEmail;
+    
+   /*  @OneToMany(mappedBy="img",cascade = CascadeType.ALL)
+    private List<imgEntity> img; */
+
     public CustomerEntity(String customerName, String customerEmail, String customerNumber, String customerPassword) {
         this.customerName = customerName;
         this.customerEmail = customerEmail;

@@ -7,10 +7,11 @@
     <title>Login</title>
     <link rel="icon"  th:href="@{img/pngegg.png}">
     <link rel="stylesheet" type="text/css" th:href="@{css/Login.css}" />
+
 </head>
 
 <body>
-<form action="" th:action="@{/customerLogin}" methode="get">
+<form action="" id="log-form" th:action="@{/login}" methode="get">
     <center>
     <div class="login" >
         <tr>
@@ -29,11 +30,11 @@
             </div></tr><br>
         <tr><div class="email">
             <td><b>Email  :<b></td>
-            <td><input type="email" name="customerEmail" placeholder="Enter email" required></td>
+            <td><input type="email" id="customerEmail" name="customerEmail" placeholder="Enter email" required></td>
         </div></tr><br>
         <tr><div class="password">
             <td><b>PassW:<b></td>
-            <td><input type="password" name="customerPassword" placeholder="Enter Password" required></td>
+            <td><input type="password" id="customerPassword" name="customerPassword" placeholder="Enter Password" required></td>
             </div></tr><br>
             <small style="color: red;" th:text="${error}"></small><br />
         <tr><div class="submit">
@@ -41,7 +42,7 @@
             <td><button type="submit">Login</button></td>
             </div>
         </tr><br>
-<tr><p>if you dont have account ? <a th:href="@{/register}">Register</a></p></tr>
+<tr><p>if you dont have account ? <a th:href="@{/reg}">Register</a></p></tr>
     </div></center>
 
     </form>

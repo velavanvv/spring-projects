@@ -5,33 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower</title>
-    <link rel="stylesheet" th:herf="@{css/Home.css}" href="../static/css/Home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" th:herf="@{css/Home.css}">
+<!--     <link rel="stylesheet" th:href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 </head>
 
 <body>
-    <div class="nav"><div class="bar">
-        <div class="menu"></div><div class="menu"></div><div class="menu"></div>
-           </div> <div class="head">
-                <h1>Madurai Flower Shop</h1>
-            </div>
+    <div class="nav">
+        <div class="bar">
+            <div class="menu"></div>
+            <div class="menu"></div>
+            <div class="menu"></div>
+        </div>
+        <div class="head">
+            <h1>Madurai Flower Shop</h1>
+        </div>
     </div>
-    <div class="icon-bar">
-        <a class="active" href="#"><i class="fa fa-home"></i></a>
-            <a href="#"><i class="fa fa-search"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-globe"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-                      </div> 
-                      
-               
-                       <div class="c2" id="c5">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quasi, quae reiciendis iste modi dolorem earum at fuga inventore necessitatibus veniam nam quis quos ratione animi accusantium. Voluptas, magni distinctio.
-                      </div>
-                      <p>&copy</p>
-                      
-                      
-                      <a href="#c5">chapter5</a>
+
+
+
+
+    <div class="c2" id="c5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quasi, quae reiciendis iste modi dolorem earum at
+        fuga inventore necessitatibus veniam nam quis quos ratione animi accusantium. Voluptas, magni distinctio.
+    </div>
+    <p>&copy</p>
+    <div th:object="${customer}">
+    <form  th:action="@{'/uplode/'+${customer.customerId}}" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="uplode">
+    </form>
+</div>
+
+    <a href="#c5">chapter5</a>
 </body>
 
 </html>

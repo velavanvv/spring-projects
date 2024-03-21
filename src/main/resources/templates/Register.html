@@ -8,17 +8,17 @@
 </head>
 <body>
     <h1>Register form</h1>
-    <form action="" th:action="@{/addingCustomer}" method="post">
+    <form th:action="@{/register}"  id="registerform" method="post">
     <label><b>Name</b></label><br>
-    <input type="text" name="customerName" placeholder="Enter name.." required><br>
+    <input type="text" id="customerName" placeholder="Enter name.." required><br>
     <label><b>Email</b></label><br>
-    <input type="email" name="customerEmail" placeholder="Enter Email.." required><br>
+    <input type="email" id="customerEmail" placeholder="Enter Email.." required><br>
     <label><b>Number</b></label><br>
-    <input type="number" name="customerNumber" placeholder="Enter number.." required><br>
+    <input type="number" id="customerNumber" placeholder="Enter number.." required><br>
     <label><b>Password</b></label><br>
-    <input type="password" name="customerPassword" placeholder="Enter password.." required><br>
+    <input type="password" id="customerPassword" placeholder="Enter password.." required><br>
     <button type="submit" >Register</button>
     </form>
-    
+    <script th:src="@{js/Register.js}"></script>
 </body>
 </html>
